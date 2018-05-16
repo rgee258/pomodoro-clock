@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro Clock</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="header-text">
+		<h1>Pomodoro Clock</h1>
+	</div>
+	<div class="clock-area">
+		<div class="clock">
+			<div class="display-area">
+				<div class="display-contents">
+					<p class="display-text">WORK</p>
+					<p class="time">25:00</p>
+				</div>
+			</div>
+			<div class="buttons-area">
+				<div class="functional-buttons">
+					<div class="start-btn func-btn" title="Start clock">
+						<p>&#x25B6;</p>
+					</div>
+					<div class="pause-btn func-btn" title="Pause clock">
+						<p>&#x275A;&#x275A;</p>
+					</div>
+					<div class="stop-btn func-btn" title="Stop clock">
+						<p>&#x25FC;</p>
+					</div>
+					<div class="reset-btn func-btn" title="Reset clock to default values">
+						<p>&#x21BA;</p>
+					</div>
+				</div>
+				<div class="time-buttons">
+					<div class="work-timer timer">
+						<div class="work-label time-btn-label">
+							<p>Work</p>
+						</div>
+						<div class="work-btns clock-btn">
+							<div><p class="dec-work" title="Decrease work interval for stopped clock">&#x25BC;</p></div>
+							<div><p class="display-work">25</p></div>
+							<div><p class="inc-work" title="Increase work interval for stopped clock">&#x25B2;</p></div>
+						</div>
+					</div>
+					<div class="break-timer timer">
+						<div class="break-label time-btn-label">
+							<p>Break</p>
+						</div>
+						<div class="break-btns clock-btn">
+							<div><p class="dec-break" title="Decrease break interval for stopped clock">&#x25BC;</p></div>
+							<div><p class="display-break">5</p></div>
+							<div><p class="inc-break" title="Increase break interval for stopped clock">&#x25B2;</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

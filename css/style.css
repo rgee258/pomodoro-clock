@@ -1,0 +1,144 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #6d6d78;
+}
+
+.header-text {
+	text-align: center;
+	margin-top: 75px;
+	font-size: 30px;
+	color: #f9fffe;
+	font-family: 'Aldrich', sans-serif;
+}
+
+.clock-area {
+	width: 100%;
+	margin-top: 50px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.clock {
+	margin: 0 auto;
+	padding: 30px 0;
+	width: 600px;
+	background-color: #0c0c0e;
+	background: radial-gradient(circle at 50%, #0c0c0e 65%, #252529 90%);
+	border-radius: 15px;
+}
+
+.clock .display-area {
+	margin: 0px auto;
+	margin-bottom: 30px;
+	width: 60%;
+	font-family: 'Aldrich', sans-serif;
+}
+
+.clock .display-area .display-contents {
+	margin: 0 auto;
+	padding: 15px 0;
+	padding-top: 25px;
+	text-align: center;
+	background-color: #252529;
+	background: linear-gradient(#303634, #49504e 50%,  #303634);
+	color: #f9fffe;
+}
+
+.display-contents .display-text {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.display-contents .time {
+	font-size: 65px;
+}
+
+.clock .buttons-area {
+	margin: 0 auto;
+	width: 80%;
+	background-color: #252529;
+	color: #f9fffe;
+	border-radius: 20px;
+}
+
+.functional-buttons {
+	text-align: center;
+}
+
+.func-btn {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.func-btn:hover, .dec-work, .inc-work, .dec-break, .inc-break {
+	cursor: pointer;
+}
+
+.func-btn p {
+	font-size: 40px;
+}
+
+.func-btn p:hover {
+	color: #ffd300;
+}
+
+.start-btn p {
+	font-size: 37px;
+}
+
+.time-buttons {
+	text-align: center;
+	padding-bottom: 7px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.timer {
+	margin: 0 auto;
+	display: inline-block;
+	width: 140px;
+	font-size: 15px;
+}
+
+.clock-btn div {
+	display: inline-block;
+	width: 20px;
+}
+
+.clock-btn p {
+	font-size: 20px;
+}
+
+.dec-work:hover, .dec-break:hover {
+	color: #ff6666;
+}
+
+.inc-work:hover, .inc-break:hover {
+	color: #66ff66;
+}
+
+.clock-btn .inc-work, .clock-btn .inc-break {
+	font-size: 25px;
+}
+
+.work-label {
+	color: #ffb833;
+	font-size: 20px;
+}
+
+.break-label {
+	font-size: 20px;
+	color: #66b0ff;
+}
