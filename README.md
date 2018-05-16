@@ -1,3 +1,5 @@
 The creation of a Pomodoro clock following The Odin Project.
 
-Check it out [here](https://github.com/rgee258/pomodoro-clock).
+Ideas for future updated versions: implementation of the rest interval, toggleable sound effects when interval ends, toggleable background music.
+
+Check it out [here](https://rgee258.github.io/pomodoro-clock/).
