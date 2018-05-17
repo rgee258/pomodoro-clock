@@ -4,6 +4,7 @@ let intervalText = "WORK"
 let timerId = -55;
 let currTime = -22;
 let timerStarted = false;
+let soundToggled = true;
 
 function startTimer() {
 	disableButtons();
@@ -52,6 +53,11 @@ function runTimer() {
 
 function switchTimer() {
 	clearInterval(timerId);
+
+	if (soundToggled) {
+		playSound();
+	}
+
 	if (intervalText === "WORK") {
 		currTime = breakTime * 60;
 		intervalText = "BREAK"
@@ -148,12 +154,29 @@ function decBreak() {
 	}
 }
 
+function toggleSound() {
+	soundToggled = !(soundToggled);
+
+	if (soundToggled) {
+		document.querySelector(".sound-btn p i").className = "fas fa-bell fa-fw";
+	}
+	else {
+		document.querySelector(".sound-btn p i").className = "fas fa-bell-slash fa-fw";
+	}
+}
+
+function playSound() {
+	let sound = new Audio("audio/pianotone.mp3");
+	sound.play();
+}
+
 window.addEventListener("load", function(event) {
 	// Add function button events
 	document.querySelector(".start-btn").addEventListener("click", startTimer);
 	document.querySelector(".pause-btn").addEventListener("click", pauseTimer);
 	document.querySelector(".stop-btn").addEventListener("click", stopTimer);
 	document.querySelector(".reset-btn").addEventListener("click", resetTimer);
+	document.querySelector(".sound-btn").addEventListener("click", toggleSound);
 	// Add timer button events
 	document.querySelector(".inc-work").addEventListener("click", incWork);
 	document.querySelector(".dec-work").addEventListener("click", decWork);
