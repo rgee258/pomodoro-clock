@@ -82,7 +82,7 @@ body {
 
 .func-btn {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 15px;
 }
 
 .func-btn:hover, .dec-work, .inc-work, .dec-break, .inc-break {
