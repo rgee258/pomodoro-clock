@@ -5,6 +5,8 @@ let timerId = -55;
 let currTime = -22;
 let timerStarted = false;
 let soundToggled = true;
+// Moved here so the tone will initially play when tab is not in focus
+let sound = new Audio("audio/pianotone.mp3")
 
 function startTimer() {
 	disableButtons();
@@ -166,7 +168,6 @@ function toggleSound() {
 }
 
 function playSound() {
-	let sound = new Audio("audio/pianotone.mp3");
 	sound.play();
 }
 
